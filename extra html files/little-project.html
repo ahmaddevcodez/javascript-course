@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css" />
+    <script src="./js/124.js" defer></script>
+
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 20%;
+        flex-direction: column;
+      }
+
+      .gradient-button {
+        background: linear-gradient(45deg, #00d5ff, #0015ff);
+        color: #fff;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        font-weight: 600;
+      }
+      /* .gradient-button:hover {
+  background: linear-gradient(45deg, #c70a00 40%, #c7d500);
+} */
+
+      h1 {
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 2em;
+        color: #fcfcfc;
+      }
+      .current-color {
+        background-color: #544e4e;
+        border-radius: 20px;
+        font-weight: 900;
+        padding: 1rem 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <div class="container">
+        <h1 class="current-color">Current Color is <span id="rgb"></span></h1>
+        <button class="gradient-button btn-1">Click To Change</button>
+      </div>
+    </head>
+  </body>
+</html>

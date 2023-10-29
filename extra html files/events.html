@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="./js/120.js" defer></script> -->
+    <!-- <script src="./js/121.js" defer></script> -->
+    <!-- <script src="./js/122.js" defer></script> -->
+    <!-- <script src="./js/123.js" defer></script> -->
+    <style>
+      .gradient-button {
+        background: linear-gradient(45deg, #00d5ff, #0015ff);
+        color: #fff;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      .gradient-button:hover {
+        background: linear-gradient(45deg, #0391ad 40%, #02ff1b);
+        animation: infinite 1s infinite;
+      }
+      .pulse-button {
+        background: #3498db;
+        color: #fff;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      .pulse-button:hover {
+        animation: pulse 1s infinite;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .bounce-button {
+        background: #2ecc71;
+        color: #fff;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+      .bounce-button:active {
+        transform: translateY(9px);
+        transform: translateX(9px);
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="gradient-button btn-1">Ahmad</button>
+      <button class="pulse-button btn-2">Waleed</button>
+      <button class="bounce-button btn-3">Sigma</button>
+    </div>
+  </body>
+</html>

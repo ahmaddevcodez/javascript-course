@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="../website/html css js website/js/129.js"
+      defer
+    ></script>
+    <style>
+      .pulse-button {
+        background: linear-gradient(to bottom, #ff6b6b, #ff512f);
+        color: #000000;
+        padding: 25px 40px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        font-size: 1.3rem;
+      }
+      .pulse-button:hover {
+        animation: pulse 1s infinite;
+        border: 2px solid white;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="pulse-button btn">Start Changing !</button>
+    </div>
+  </body>
+</html>

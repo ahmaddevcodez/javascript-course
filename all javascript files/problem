@@ -1,0 +1,50 @@
+// const arr = ["flower", "flow", "flightee", "flop"];
+
+// function giveLongestCommonPrefix(array) {
+//   let result;
+//   let sample = null;
+//   for (let i = 0; i <= array.length - 1; i++) {
+//     const str = array[i];
+//     if (!sample) {
+//       sample = str;
+//     } else {
+//       const dec = sample.length > str.length;
+//       let stringToBeLooped;
+//       let stringToBeChecked;
+//       if (dec) {
+//         stringToBeLooped = str;
+//         stringToBeChecked = sample;
+//       } else {
+//         stringToBeLooped = sample;
+//         stringToBeChecked = str;
+//       }
+//       let prefix = [];
+//       for (let j = 0; j <= stringToBeLooped.length - 1; j++) {
+//         if (stringToBeChecked[j] === stringToBeLooped[j]) {
+//           prefix.push(stringToBeChecked[j]);
+//         } else {
+//           break;
+//         }
+//       }
+//       result = prefix.join("");
+//       if (prefix.length === 0) break;
+//     }
+//   }
+//   console.log(result);
+
+//   // console.log(sample);
+// }
+// giveLongestCommonPrefix(arr);
+
+// const checkPalindrome = (str) =>
+//   str.toLowerCase() === str.split(",").reverse().join(",");
+// console.log(checkPalindrome("refer"));
+
+const str = "I love javascript waleedisagood";
+
+const splitedarray = str.split(" ");
+const lengarray = splitedarray.map((str) => str.length);
+let highestCharNumber = lengarray.sort(function (a, b) {
+  return b - a;
+})[0];
+console.log(highestCharNumber);

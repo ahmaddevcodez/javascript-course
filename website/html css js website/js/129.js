@@ -33,8 +33,7 @@ function startGradient() {
     const green = Math.floor(Math.random() * 256);
     const blue = Math.floor(Math.random() * 256);
 
-    // Set the gradient color
-    const gradientColor = `rgb(${red},${green},${blue})`;
+    // Set the gradient colorn entColor = `rgb(${red},${green},${blue})`;
     const gradientColor2 = `rgb(${red},${blue},${green})`;
     const gradientColor3 = `rgb(${blue},${green},${red})`;
     const gradientColor4 = `rgb(${green},${red},${blue})`;
